@@ -34,6 +34,7 @@ class DataParser {
       let colours = []
       let colourChoices = entry[3].split('/')
       colours.push(colourChoices)
+      console.log(colours);
       catalog.push(new Sofa(entry[0],entry[1],entry[2],colours,entry[4],entry[5]))
     }
     return catalog
